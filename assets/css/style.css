@@ -1,0 +1,258 @@
+.fixed-top-1 {
+    margin-top: 40px;
+}
+
+.fixed-top-2{
+    margin-top: 147px;
+}
+/*.nav-item:hover{
+    background-color: rgb(0, 70, 94);                       
+}*/
+
+.color-fondo{
+    background-color: #d9dadd;
+}
+
+.contenido-carousel{
+    background-color: rgba(0, 70, 94, 1);
+    opacity: .7;
+}
+
+.carousel-caption {
+    right: 10%;
+    text-align: right;
+    max-width: 400px;
+    left: auto;
+    padding:5px;
+}
+.color-p{
+    background-color: rgb(0, 70, 94);
+}
+
+.color-l-p{
+    color: rgb(62, 187, 196);
+}
+
+.color-s{
+    background-color: rgba(0, 70, 94, 0.1);
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.esp-bloq {
+    height: 5rem;
+}
+
+.esp-bloq-2 {
+    height: 2rem;
+}
+
+.card{
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.contorno{
+    border: 1px solid rgba(0,0,0,.125); 
+}
+
+@media (max-width: 575.98px) {
+    body{
+        margin-top: 153px;
+    }
+    .d-lg-block {
+        display: block!important;
+    }
+ }
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    body{
+        margin-top: 150px;
+    }
+    .d-lg-block {
+        display: block!important;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body{
+        margin-top: 197px;
+    }
+    .d-lg-block {
+        display: block!important;
+    } 
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    body{
+        margin-top: 180px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    body{
+        margin-top: 180px;
+    }
+}
+
+figcaption{
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    color: #fff;
+    font-size: 13px;
+    padding: 2px 9px;
+    background-color:  rgb(0, 70, 94);
+}
+
+.figure-caption{
+    position: relative;
+    right: 0;
+    bottom: 50%;
+    color: #fff;
+    font-size: 12px;
+    background-color:  rgb(0, 70, 94);
+    padding: 2px 2px;
+}
+
+h2 {
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  h2:before,
+  h2:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+  
+  h2:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  
+  h2:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
+  #scroll-top {
+    /*display: none;*/
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
+    text-align: center;
+    color: #fff;
+    background-color: #4dc7ec;
+    z-index: 9999;
+    transition: all 0.25s ease-in-out;
+  }
+  #scroll-top:hover {
+    background-color: #37b3d9;
+  }
+
+.boton {
+    display: inline-block;
+    background-color: rgba(113, 118, 119, 0.01);
+    font-weight: bold;
+}
+
+.boton:hover{
+    background-color: rgba(0, 72, 94,0.7);
+    color: rgb(0, 70, 94);
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: rgb(90, 95, 105);
+}
+
+.text-econ{
+    color: rgb(30, 126, 155);
+}
+
+.text-econ-2{
+    color: rgb(0, 72, 94);
+}
+
+.image-efect-1:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.cont {
+    overflow: hidden;
+}
+
+
+/*SECCION CUADRADOS*/
+section {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    background-color: #f1f4fa;
+}
+.wrap {
+    display: flex;
+    background: white;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 7px 7px 30px -5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+/*.wrap:hover {
+    background: linear-gradient(135deg,#6394ff 0%,#0a193b 100%);
+    color: white;
+}*/
+
+.ico-wrap {
+    margin: auto;
+}
+
+.mbr-iconfont {
+    font-size: 4.5rem !important;
+    color: #313131;
+    margin: 1rem;
+    padding-right: 1rem;
+}
+.vcenter {
+    margin: auto;
+}
+
+.mbr-section-title3 {
+    text-align: left;
+}
+h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.display-5 {
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 1.4rem;
+}
+.mbr-bold {
+    font-weight: 700;
+}
+
+ p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 25px;
+}
+
+.display-6 {
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 1rem
+}
