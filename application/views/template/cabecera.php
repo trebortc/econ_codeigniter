@@ -67,7 +67,7 @@
                 </ul>
                 <div class="form-inline my-2 my-lg-0 mr-3">
                     <input class="form-control" type="text" placeholder="Search" value="593 + 969305524">
-                    <button class="btn btn-outline-secondary" type="submit"><a href="https://api.whatsapp.com/send?phone=593969305524"><i class="fa fa-phone"></i></a></button>
+                    <button class="btn btn-outline-secondary" type="submit"><a href="https://api.whatsapp.com/send?phone=593969305524"><i class="fab fa-whatsapp"></i></a></button>
                 </div>
             </div>       
         </nav>
