@@ -37,14 +37,12 @@ class Banner extends CI_Controller
         if($this->form_validation->run() == TRUE)
         {            
             $imagen1 = $this->ImagenModel->cargarImagenServidor('imagen1');
-            $imagen2 = $this->ImagenModel->cargarImagenServidor('imagen2');
-
-                $titulo = $this->input->post('titulo');
-                $descripcion = $this->input->post('descripcion');
-                $texto = $this->input->post('texto');
-                $precio = $this->input->post('precio');
-                $this->BannerModel->guardar($titulo, $descripcion, $texto, $precio, $imagen1, $imagen2);
-                $this->index();
+            $titulo = $this->input->post('titulo');
+            $descripcion = $this->input->post('descripcion');
+            $texto = $this->input->post('texto');
+            $precio = $this->input->post('precio');
+            $this->BannerModel->guardar($titulo, $descripcion, $texto, $precio, $imagen1);
+            $this->index();
 
         }else{
             $this->index();

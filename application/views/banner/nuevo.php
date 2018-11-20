@@ -27,10 +27,6 @@
                     <label for="imagen1">Imagen 1</label>
                     <input type="file" class="form-control-file" id="imagen1" name="imagen1">
                 </div>
-                <div class="form-group">
-                    <label for="imagen2">Imagen 2</label>
-                    <input type="file" class="form-control-file" id="imagen2" name="imagen2">
-                </div>
                 <button type="submit" class="btn btn-primary">Guardar</button>
             </form>
         </div>

@@ -22,8 +22,8 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->model('BannerModel');
 		$banners = $this->BannerModel->getBanners();
-		$this->load->view('welcome_message',compact('banners'));
 		$this->load->view('template/cabecera');
+		$this->load->view('template/carousel',compact('banners'));
 		$this->load->view('template/piedepagina');
 	}
 	public function hola()

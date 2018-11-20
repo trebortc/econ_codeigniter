@@ -10,7 +10,7 @@ class ImagenModel extends CI_Model
     public function parametros()
     {   
         $config['upload_path'] = './uploads/';
-        $config['allowed_types'] = 'gif|jpg|png';
+        $config['allowed_types'] = 'gif|jpg|png|jpeg';
         $config['max_size'] = '2000';
         $config['max_width'] = '2024';
         $config['max_height'] = '2008';
@@ -21,7 +21,6 @@ class ImagenModel extends CI_Model
     {
         $config = $this->parametros();
         $this->load->library('upload', $config);
-
         if ( ! $this->upload->do_upload($imagen) )
         {
             $error = array('error' => $this->upload->display_errors());
@@ -34,7 +33,6 @@ class ImagenModel extends CI_Model
             $file_info = $this->upload->data();
             $imagen1 = $file_info['file_name'];
         }
-    
         return $imagen1;
     }
 

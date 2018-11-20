@@ -6,15 +6,14 @@ class BannerModel extends CI_Model
         parent::__construct();
     }
 
-    public function guardar($titulo, $descripcion, $texto, $precio, $imagen1, $imagen2)
+    public function guardar($titulo, $descripcion, $texto, $precio, $imagen1)
     {
         $datos = array(
             'titulo' => $titulo,
             'descripcion' => $descripcion,
             'texto' => $texto,
             'precio' => $precio,
-            'imagen1' => $imagen1,
-            'imagen2' => $imagen2
+            'imagen1' => $imagen1
         );
         
         return $this->db->insert('banner', $datos);
