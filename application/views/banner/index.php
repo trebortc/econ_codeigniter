@@ -1,7 +1,7 @@
-<div class="container-fluid">
+<div class="container-fluid pt-0 pb-5 pr-5 pl-5">
     <div class="row text-right">
         <div class="col-11">
-            <a href="#" class="btn btn-info" role="button">Nuevo</a>
+            <a href="<?php echo base_url();?>Banner/nuevo" class="btn btn-info" role="button">Nuevo</a>
         </div>
     </div>
     <div class="row">

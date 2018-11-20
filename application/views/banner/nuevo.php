@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid pt-0 pb-5 pr-5 pl-5">
     <div class="row">
         <div class="col">
             <h3>Nuevo Banner</h3>

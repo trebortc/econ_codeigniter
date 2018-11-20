@@ -29,13 +29,13 @@
             </li>
                 
             <li class="nav-item">
-                <a class="p-4 nav-link text-econ" href="#">Banner</a>
+                <a class="p-4 nav-link text-econ" href="<?php echo base_url();?>Banner/">Banner</a>
             </li>
             <li class="nav-item">
-                <a class="p-4 nav-link text-econ" href="#">Proyectos</a>
+                <a class="p-4 nav-link text-econ" href="<?php echo base_url();?>Proyectos/">Proyectos</a>
             </li>
             <li class="nav-item">
-                <a class="p-4 nav-link text-econ" href="#">Noticias</a>
+                <a class="p-4 nav-link text-econ" href="<?php echo base_url();?>Noticias/">Noticias</a>
             </li>
         </ul>
         <!-- FinNavegacion -->
