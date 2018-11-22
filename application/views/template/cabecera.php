@@ -26,10 +26,7 @@
         <nav class="navbar navbar-expand-md navbar-light flex-row fixed-top justify-content-end p-0 m-0" style="background-color: rgb(226,227,229);" >
             <ul class="navbar-nav flex-row ml-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link p-3" href="{{ route('login') }}"><i class="fa fa-user" style="color:black;"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link p-3" href="{{ route('register') }}"><i class="fas fa-clipboard-list" style="color:black;"></i></a>
+                        <a class="nav-link p-3" href="<?php echo base_url();?>inicio/login"><i class="fa fa-user" style="color:black;"></i></a>
                     </li>
             </ul>         
         </nav>
@@ -47,26 +44,26 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link boton m-1 p-1 hvr-grow" href="{{ route('inicio') }}">Inicio</a>
+                        <a class="nav-link boton m-1 p-1 hvr-grow" href="<?php echo base_url();?>">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link boton m-1 p-1 hvr-grow" href="{{ route('quienesomos') }}">Quiénes Somos</a>
+                        <a class="nav-link boton m-1 p-1 hvr-grow" href="<?php echo base_url();?>inicio/quienesomos">Quiénes Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link boton m-1 p-1 hvr-grow" href="{{ route('proyectos') }}">Nuestros Proyectos</a>
+                        <a class="nav-link boton m-1 p-1 hvr-grow"href="<?php echo base_url();?>inicio/nuestrosproyectos">Nuestros Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link boton m-1 p-1 hvr-grow" href="{{ route('financiamiento') }}">Financiamiento</a>
+                        <a class="nav-link boton m-1 p-1 hvr-grow" href="<?php echo base_url();?>inicio/financiamiento">Financiamiento</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link boton m-1 p-1 hvr-grow" href="{{ route('noticias') }}">Noticias</a>
+                        <a class="nav-link boton m-1 p-1 hvr-grow" href="<?php echo base_url();?>inicio/noticias">Noticias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link boton m-1 p-1 hvr-grow" href="{{ route('contactos') }}">Contactos</a>
+                        <a class="nav-link boton m-1 p-1 hvr-grow" href="<?php echo base_url();?>inicio/contactos">Contactos</a>
                     </li>
                 </ul>
                 <div class="form-inline my-2 my-lg-0 mr-3">
-                    <input class="form-control" type="text" placeholder="Search" value="593 + 969305524">
+                    <input class="form-control" type="text" placeholder="Search" value="593 + 960534358">
                     <button class="btn btn-outline-secondary" type="submit"><a href="https://api.whatsapp.com/send?phone=593969305524"><i class="fab fa-whatsapp"></i></a></button>
                 </div>
             </div>       

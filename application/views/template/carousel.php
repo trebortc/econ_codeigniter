@@ -49,28 +49,36 @@
         <div class="row">
             <div class="col">
                 <div class="text-center">
-                    <img src="{{ asset('image/foco.png') }}" alt="casa ejm" class="img-fluid rounded-circle">
+                    <?php 
+                        echo "<img src='".base_url()."/assets/img/foco.png' alt='casa ejm' class='img-fluid rounded-circle'>";
+                    ?>
                 </div>
             </div>
             <div class="col">
                 <div class="text-center">
-                    <img src="{{ asset('image/foco.png') }}" alt="casa ejm" class="img-fluid rounded-circle">
+                    <?php 
+                        echo "<img src='".base_url()."/assets/img/foco.png' alt='casa ejm' class='img-fluid rounded-circle'>";
+                    ?>
                 </div>
             </div>
             <div class="col">
                 <div class="text-center">
-                    <img src="{{ asset('image/foco.png') }}" alt="casa ejm" class="img-fluid rounded-circle">
+                    <?php 
+                        echo "<img src='".base_url()."/assets/img/foco.png' alt='casa ejm' class='img-fluid rounded-circle'>";
+                    ?>
                 </div>
             </div>
             <div class="col">
                 <div class="text-center">
-                    <img src="{{ asset('image/foco.png') }}" alt="casa ejm" class="img-fluid rounded-circle">
+                    <?php 
+                        echo "<img src='".base_url()."/assets/img/foco.png' alt='casa ejm' class='img-fluid rounded-circle'>";
+                    ?>
                 </div>
             </div>  
         </div>
         <div class="row">
-            <div class="col text-center pt-3">
-                Sea cual sea tu necesidad y tu estilo de vida tenemos un proyecto para ti.
+            <div class="col text-center pt-4">
+                <h4>Econ, la más importante empresa constructora ecuatoriana, líder en cumplir tus sueños de casa propia</h4>
             </div>
         </div>
     </div>

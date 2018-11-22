@@ -15,9 +15,9 @@
                             "</h3>".
                             "<div class='mb-1 text-muted'>".$proyecto->fecha."</div>".
                             "<p class='card-text mb-auto'>".$proyecto->descripcion."</p>".
-                            "<a class='color-l-p' href='proyecto-1.html'>Más información</a>".
+                            "<a class='color-l-p' href='".base_url()."proyectos/ver/".$proyecto->id."'>Más información</a>".
                         "</div>".
-                        "<img class='card-img-right flex-auto d-none d-lg-block img-p-1' src='img/casa_1.png' alt='Card image cap'>".
+                        "<img class='card-img-right flex-auto d-none d-lg-block img-p-1' src='".base_url()."uploads/".$proyecto->imagen1."' alt='Card image cap'>".
                     "</div>".
                     "<div class='pie-card border-top p-2'>".
                         "<span class='badge badge-pill badge-light'> <i class='fa fa-stop fa-2x' aria-hidden='true'></i> m2</span>".

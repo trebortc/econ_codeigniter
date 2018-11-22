@@ -23,19 +23,26 @@
     </head>
     <body>
         <!-- Navegación -->
-        <ul class="nav nav-tabs bg-light flex-row fixed-top">
+        <ul class="nav nav-tabs bg-dark flex-row fixed-top p-4">
             <li class="nav-item active">
-                <h5 class="p-4" >ECON - PANEL</h5>
+                <h5 class="">
+                    <a class="" href="<?php echo base_url();?>Inicio/">
+                        <?php 
+                            echo "<img src='".base_url()."/assets/img/econ_b.svg' alt='financiamiento' class='pr-3n'>";
+                        ?>
+                    </a>
+                </h5>
+                
             </li>
                 
             <li class="nav-item">
-                <a class="p-4 nav-link text-econ" href="<?php echo base_url();?>Banner/">Banner</a>
+                <a class="p-4 nav-link text-white font-weight-bold" href="<?php echo base_url();?>Banner/">Banner</a>
             </li>
             <li class="nav-item">
-                <a class="p-4 nav-link text-econ" href="<?php echo base_url();?>Proyectos/">Proyectos</a>
+                <a class="p-4 nav-link text-white font-weight-bold" href="<?php echo base_url();?>Proyectos/">Proyectos</a>
             </li>
             <li class="nav-item">
-                <a class="p-4 nav-link text-econ" href="<?php echo base_url();?>Noticias/">Noticias</a>
+                <a class="p-4 nav-link text-white font-weight-bold" href="<?php echo base_url();?>Noticias/">Noticias</a>
             </li>
         </ul>
         <!-- FinNavegacion -->
