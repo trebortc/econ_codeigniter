@@ -24,9 +24,7 @@ class ImagenModel extends CI_Model
         if ( ! $this->upload->do_upload($imagen) )
         {
             $error = array('error' => $this->upload->display_errors());
-            $this->load->view('template/cabecera_admin');
-            //$this->load->view('banner/error', $error);
-            $this->load->view('template/piedepagina_admin');
+            return null;
         }
         else
         {

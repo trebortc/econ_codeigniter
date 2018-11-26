@@ -10,11 +10,11 @@ class Noticias extends CI_Controller
     }
 
     //Cargar la vista de todos los banners creados
-    public function index()
+    public function index($mensaje = "BIENVENIDO")
     {
         $noticias = $this->NoticiasModel->getNoticias();
         $this->load->view('template/cabecera_admin');
-        $this->load->view('noticias/index',compact('noticias'));
+        $this->load->view('noticias/index',compact('noticias','mensaje'));
         $this->load->view('template/piedepagina_admin');
     }
 
@@ -36,10 +36,11 @@ class Noticias extends CI_Controller
     
     public function eliminar($id)
     {
-        $this->BannerModel->eliminar($id);
-        $banners = $this->BannerModel->getBanners();
+        $this->NoticiasModel->eliminar($id);
+        $mensaje = "Dato eliminado con exito";
+        $noticias = $this->NoticiasModel->getNoticias();
         $this->load->view('template/cabecera_admin');
-        $this->load->view('banner/index',compact('banners'));
+        $this->load->view('noticias/index',compact('noticias','mensaje'));
         $this->load->view('template/piedepagina_admin'); 
     }
 
@@ -51,18 +52,26 @@ class Noticias extends CI_Controller
         $this->form_validation->set_rules('texto','Texto','required');
         
         if($this->form_validation->run() == TRUE)
-        {            
-            $imagen1 = $this->ImagenModel->cargarImagenServidor('imagen1');
-            $imagen2 = $this->ImagenModel->cargarImagenServidor('imagen2');
-            $titulo = $this->input->post('titulo');
-            $descripcion = $this->input->post('descripcion');
-            $texto = $this->input->post('texto');
-            $fecha = $this->input->post('fecha');
-            $this->NoticiasModel->guardar($titulo, $descripcion, $texto, $fecha, $imagen1, $imagen2);
-            $this->index();
-
+        {   
+            try{
+                $imagen1 = $this->ImagenModel->cargarImagenServidor('imagen1');
+                $imagen2 = $this->ImagenModel->cargarImagenServidor('imagen2');
+                if(is_null($imagen1) && is_null($imagen2))
+                {
+                    $this->index("Error al cargar imagenes");    
+                }else{
+                    $titulo = $this->input->post('titulo');
+                    $descripcion = $this->input->post('descripcion');
+                    $texto = $this->input->post('texto');
+                    $fecha = $this->input->post('fecha');
+                    $this->NoticiasModel->guardar($titulo, $descripcion, $texto, $fecha, $imagen1, $imagen2);
+                    $this->index("Dato creado con exito");   
+                }
+            }catch(Exception $e){
+                $this->index("Error en subir imagen");
+            }    
         }else{
-            $this->index();
+            $this->index("Debe llenar todos los campos");
         }
 
     }
@@ -89,10 +98,9 @@ class Noticias extends CI_Controller
             $texto = $this->input->post('texto');
             $fecha = $this->input->post('fecha');
             $this->NoticiasModel->actualizar($id,$titulo, $descripcion, $texto, $fecha);
-            $this->index();
-
+            $this->index("Dato creado con exito"); 
         }else{
-            $this->index();
+            $this->index("Debe llenar todos los campos");
         }
     }
 

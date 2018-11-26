@@ -1,4 +1,14 @@
 <div class="container-fluid pt-0 pb-5 pr-5 pl-5">
+    <div class="row">
+        <div class="col">
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>MENSAJE: </strong> <?=$mensaje;?>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+        </div>
+    </div>
     <div class="row text-right">
         <div class="col-11">
             <a href="<?php echo base_url();?>proyectos/nuevo" class="btn btn-info" role="button">Nuevo</a>

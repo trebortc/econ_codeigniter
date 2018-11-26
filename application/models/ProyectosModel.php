@@ -28,7 +28,7 @@ class ProyectosModel extends CI_Model
 
     public function getProyectos()
     {
-        return $this->db->query('select * from proyectos')->result();
+        return $this->db->query('select * from proyectos order by id desc')->result();
     }
 
     public function ver($id)
@@ -51,5 +51,11 @@ class ProyectosModel extends CI_Model
 
         $this->db->where('id',$id);
         $this->db->update('proyectos',$datos);
+    }
+
+    public function eliminar($id)
+    {
+        $dato = array('id' => $id);
+        $this->db->delete('proyectos',$dato);
     }
 }
