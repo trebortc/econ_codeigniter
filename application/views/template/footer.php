@@ -6,15 +6,15 @@
                     <h6 class="mb-0">¡Conéctate con nosotros en las redes sociales!</h6>
                 </div>
                 <div class="col-md-6 col-lg-7 text-center text-md-right">
-                <a class="fb-ic"><i class="fab fa-facebook-f text-white mr-4"></i></a>
+                <a class="" href = 'https://www.facebook.com/ecuadorconstruyesuenos/'><i class="fab fa-facebook-f text-white mr-4"></i></a>
                 <!-- Twitter -->
-                <a class="tw-ic"><i class="fab fa-twitter text-white mr-4"></i></a>
+                <a class="" href = 'https://twitter.com/econsuenos'><i class="fab fa-twitter text-white mr-4"></i></a>
                 <!-- Google +-->
-                <a class="gplus-ic"><i class="fab fa-google-plus text-white mr-4"></i></a>
+                <a class="" href = 'https://www.youtube.com/channel/UC_BDi4p-MlA-Y0C_WWj-E3w'><i class="fab fa-youtube text-white mr-4"></i></a>
                 <!--Linkedin -->
-                <a class="li-ic"><i class="fab fa-linkedin text-white mr-4"></i></a>
+                <a class="" href = 'https://api.whatsapp.com/send?phone=593960534358'><i class="fab fa-whatsapp text-white mr-4"></i></a>
                 <!--Instagram-->
-                <a class="ins-ic"><i class="fab fa-instagram text-white"></i></a>
+                <a class="" href = 'https://www.instagram.com/econstructruyesuenos/'><i class="fab fa-instagram text-white"></i></a>
                 </div>
             </div>
         </div>

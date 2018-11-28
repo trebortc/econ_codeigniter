@@ -9,7 +9,7 @@
                         "<div class='card-body'>".
                             "<h6>".$noticia->fecha." por <span class='badge badge-secondary'>ECON</span></h6>".
                             "<p class='card-text'>".$noticia->descripcion."</p>".
-                            "<a href='' class='btn btn-secondary btn-sm'>Leer más <i class='fa fa-caret-right' aria-hidden='true'></i></a>".
+                            "<a href='".base_url()."noticias/ver/".$noticia->id."' class='btn btn-secondary btn-sm'>Leer más <i class='fa fa-caret-right' aria-hidden='true'></i></a>".
                         "</div>".
                     "</div>".
                 "</div>";    

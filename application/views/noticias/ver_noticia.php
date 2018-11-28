@@ -5,7 +5,7 @@
         	echo "<h1><span class='badge badge-secondary'>".$noticia['titulo']."</span></h1>".
                 "<hr>".
                 "<div class='text-center'>".
-                    "<img class='img-fluid' src='".base_url()."uploads/".$noticia['imagen1']."' alt='Primera Imagen'>".
+                    "<img class='img-fluid' src='".base_url()."uploads/".$noticia['imagen2']."' alt='Primera Imagen'>".
                 "</div>".
                     "<hr>".
                         "<h4><span class='badge badge-secondary'>".$noticia['fecha']."</span>  <span class='badge badge-secondary'>ECON</span></h4>".
