@@ -50,4 +50,11 @@ class BannerModel extends CI_Model
         $this->db->update('banner',$datos);
     }
 
+    public function ver($id)
+    {
+        $this->db->where("id", $id);
+        $query = $this->db->get("banner");
+        return $query->row_array();
+    }
+
 }

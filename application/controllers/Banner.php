@@ -25,6 +25,14 @@ class Banner extends CI_Controller
         $this->load->view('banner/nuevo');
         $this->load->view('template/piedepagina_admin');
     }
+
+    public function ver($id)
+    {   
+        $banner = $this->BannerModel->ver($id);
+        $this->load->view('template/cabecera');
+		$this->load->view('banner/ver_banner',compact('banner'));
+		$this->load->view('template/piedepagina');	
+    }
     
     
     public function guardar()

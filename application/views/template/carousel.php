@@ -18,7 +18,7 @@
                                         "<p>".$banner->descripcion."...</p>".
                                         "<h6> Desde".$banner->precio."</h6>".
                                 "</div>".
-                                "<a type='button' class='btn btn-secondary mr-3'>Más información</a>".
+                                "<a type='button' href='".base_url()."banner/ver/".$banner->id."' class='btn btn-secondary mr-3'>Más información</a>".
                             "</div>".
                             "</div>";
                         $b = FALSE;
