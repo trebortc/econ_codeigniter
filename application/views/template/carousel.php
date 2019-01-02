@@ -50,28 +50,28 @@
             <div class="col">
                 <div class="text-center">
                     <?php 
-                        echo "<img src='".base_url()."/assets/img/foco.png' alt='casa ejm' class='img-fluid rounded-circle'>";
+                        echo "<img src='".base_url()."/assets/img/lug/arboles.png' alt='casa ejm' class='img-fluid rounded-circle' style='width:80%;'>";
                     ?>
                 </div>
             </div>
             <div class="col">
                 <div class="text-center">
                     <?php 
-                        echo "<img src='".base_url()."/assets/img/foco.png' alt='casa ejm' class='img-fluid rounded-circle'>";
+                        echo "<img src='".base_url()."/assets/img/lug/cancha.png' alt='casa ejm' class='img-fluid rounded-circle' style='width:80%;'>";
                     ?>
                 </div>
             </div>
             <div class="col">
                 <div class="text-center">
                     <?php 
-                        echo "<img src='".base_url()."/assets/img/foco.png' alt='casa ejm' class='img-fluid rounded-circle'>";
+                        echo "<img src='".base_url()."/assets/img/lug/laguna.png' alt='casa ejm' class='img-fluid rounded-circle' style='width:80%;'>";
                     ?>
                 </div>
             </div>
             <div class="col">
                 <div class="text-center">
                     <?php 
-                        echo "<img src='".base_url()."/assets/img/foco.png' alt='casa ejm' class='img-fluid rounded-circle'>";
+                        echo "<img src='".base_url()."/assets/img/lug/museo.png' alt='casa ejm' class='img-fluid rounded-circle' style='width:80%;'>";
                     ?>
                 </div>
             </div>  
